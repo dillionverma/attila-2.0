@@ -34,7 +34,7 @@ html.menu-active,
 }
 
 body {
-	font: 400 2em / 1.5em $open-sans-regular, serif;
+	font: 400 2em / 1.5em $open-sans-regular, sans-serif;
 	color: $color-blue-30;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
@@ -104,7 +104,7 @@ ol > li:before {
 	position: absolute;
 	width: 1.5em;
 	margin-left: -2em;
-	font-family: '$open-sans-regular Sans', sans-serif;
+	font-family: $open-sans-regular, sans-serif;
 	font-size: 1em;
 	font-weight: 500;
 	line-height: 1.5em;
@@ -322,7 +322,7 @@ img {
 	    opacity: .2;
 	}
 	100% {
-		opacity: .9;
+		opacity: .6;
 	}
 }
 
