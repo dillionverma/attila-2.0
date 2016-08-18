@@ -14,9 +14,9 @@
 			</span>
 			{{/if}}
 		</nav>
-		<h1 class="blog-name"><a href="{{@blog.url}}">{{@blog.title}}</a></h1>
+		<h1 class="blog-name animated fadeInUp"><a href="{{@blog.url}}">{{@blog.title}}</a></h1>
 		{{#if @blog.description}}
-		<span class="blog-description">{{@blog.description}}</span>
+		<span class="blog-description animated fadeInUp">{{@blog.description}}</span>
 		{{/if}}
 		{{#if @blog.cover}}
 		<div class="blog-cover cover" style="background-image: url('{{@blog.cover}}');"></div>
@@ -27,9 +27,9 @@
 <div id="index" class="container">
 
 	<main class="content" role="main">
-	
+
 		{{> "loop"}}
-	
+
 	</main>
 
 </div>

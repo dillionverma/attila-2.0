@@ -24,8 +24,8 @@
 			</span>
 			{{/if}}
 		</nav>
-		<h1 class="post-title">{{{title}}}</h1>
-		<span class="post-meta">{{author}} | <time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time></span>
+		<h1 class="post-title animated fadeInUp">{{{title}}}</h1>
+		<span class="post-meta animated fadeInUp">{{author}} | <time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time></span>
 		{{#if image}}<div class="post-cover cover" style="background-image: url('{{image}}');"></div>{{/if}}
 	</div>
 </header>
@@ -33,13 +33,13 @@
 <main class="content" role="main">
 	<article class="{{post_class}}">
 		<div class="inner">
-		
+
 			<section class="post-content">
 				{{content}}
 			</section>
-			
+
 			<section class="post-info">
-				
+
 				<div class="post-share">
 					<a class="twitter" href="https://twitter.com/share?text={{title}}&url={{url absolute="true"}}" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
 						<i class="ic ic-twitter"></i><span class="hidden">Twitter</span>
@@ -52,13 +52,13 @@
 					</a>
 					<div class="clear"></div>
 				</div>
-				
+
 				<aside class="post-tags">
 					{{tags separator=" "}}
 				</aside>
-				
+
 				<div class="clear"></div>
-				
+
 				{{#author}}
 				<aside class="post-author">
 					{{#if image}}
@@ -89,7 +89,7 @@
 				{{/author}}
 
 			</section>
-			
+
 
 			<section class="post-comments">
 				<a id="show-disqus" class="post-comments-activate">Show Comments</a>

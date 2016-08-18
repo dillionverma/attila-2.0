@@ -317,6 +317,11 @@ img {
 	display: none;
 }
 
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
 @keyframes fadein {
 	0% {
 	    opacity: .2;
@@ -325,6 +330,22 @@ img {
 		opacity: .6;
 	}
 }
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInUp {
+  animation-name: fadeInUp;
+}
+
 
 /* ==========================================================================
    Header
@@ -406,6 +427,7 @@ img {
 	font-size: 2em;
 	line-height: 1em;
 	text-decoration: none;
+  animation-delay: 0.25s;
 }
 .home-template .blog-name {
 	font-size: 3em;
@@ -426,6 +448,7 @@ img {
 	padding: 0;
 	font-size: 1em;
 	line-height: 1.5em;
+  animation-delay: 0.75s;
 }
 .home-template .blog-description {
 	font-size: 1.5em;
@@ -870,6 +893,7 @@ img {
 	font-weight: 700;
 	text-indent: -1px;
 	color: $color-black;
+  animation-delay: 0.25s;
 }
 .has-cover .post-title {
 	color: $color-white;
@@ -889,6 +913,7 @@ img {
 	font-weight: 400;
 	line-height: 1.333em;
 	opacity: 0.5;
+  animation-delay: 0.75s;
 }
 .has-cover .post-meta {
 	color: $color-white;
