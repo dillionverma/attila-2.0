@@ -345,6 +345,21 @@ img {
 .fadeInUp {
   animation-name: fadeInUp;
 }
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInDown {
+  animation-name: fadeInDown;
+}
 
 
 /* ==========================================================================
@@ -411,6 +426,7 @@ img {
 	top: 0;
 	margin: 1em;
 	z-index: 200;
+  animation-delay: 1.00s;
 }
 .blog-logo img {
 	display: block;
@@ -507,9 +523,9 @@ img {
 	height: 1.5em;
 	margin-bottom: 1em;
 	padding: 0.5em 1.25em;
-	border: 1px solid $color-blue-80;
+	/*border: 1px solid $color-blue-80;*/
 	font-family: $open-sans-regular, sans-serif;
-	font-size: 0.75em;
+	font-size: 1.00em;
 	line-height: 1.666em;
 	text-shadow: none;
 	color: $color-blue-60;
@@ -517,6 +533,7 @@ img {
 	background: $color-white;
 	transition: color,border-color ease 0.3s;
 	border-radius: 2em;
+  animation-delay: 1.00s;
 }
 .nav-button a:hover,
 .nav-button a:focus {
@@ -526,12 +543,13 @@ img {
 .cover-active .nav-button a {
 	color: $color-white;
 	border-color: rgba(255,255,255,0.5);
-	background: transparent;
+	background: rgba(0,0,0,0.2);
 }
 .cover-active .nav-button a:hover,
 .cover-active .nav-button a:focus {
 	color: $color-white;
 	border-color: $color-white;
+  background: rgba(0,0,0,0.5);
 }
 .nav-button a i {
 	display: inline-block;
