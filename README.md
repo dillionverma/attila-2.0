@@ -4,10 +4,7 @@ A content focused responsive theme for [Ghost](http://github.com/tryghost/ghost/
 
 ## Demo
 
-* [Blog](http://attila.zutrinken.com/)
-* [Post](http://attila.zutrinken.com/demo/)
-* [Tag Archive](http://attila.zutrinken.com/tag/general/)
-* [Author Archive](http://attila.zutrinken.com/author/zutrinken/)
+* [Blog](http://blog.dillionverma.com/)
 
 ## Features
 
@@ -30,7 +27,7 @@ To enable [Disqus](https://disqus.com/) comments go to your blogs code injection
 Install [Grunt](http://gruntjs.com/getting-started/):
 
 	npm install -g grunt-cli
-	
+
 Install Grunt dependencies:
 
 	npm install
@@ -38,7 +35,7 @@ Install Grunt dependencies:
 Build Grunt project:
 
 	grunt build
-	
+
 
 ## Copyright & License
 
